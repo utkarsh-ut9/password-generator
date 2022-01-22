@@ -40,11 +40,10 @@ input[type=checkbox] {
 }
 
 .container {
-	background: hsla(222, 100%, 68%, 1);
-	background: linear-gradient(90deg, hsla(222, 100%, 68%, 1) 22%, hsla(133, 83%, 72%, 1) 100%);
-	background: -moz-linear-gradient(90deg, hsla(222, 100%, 68%, 1) 22%, hsla(133, 83%, 72%, 1) 100%);
-	background: -webkit-linear-gradient(90deg, hsla(222, 100%, 68%, 1) 22%, hsla(133, 83%, 72%, 1) 100%);
-	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#5B8CFF", endColorstr="#7EF398", GradientType=1 );
+	background: #000046;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 	border-radius: 2rem;
 	padding: 20px;
 	width: 350px;

@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="style.css">
 	<script src="https://kit.fontawesome.com/3da1a747b2.js" crossorigin="anonymous"></script>
 	<link href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAD///8Abs/+AD6d/wC7u7sAAG7eAIHV/gAhj/8An9/+AD6H0ACYmJgAP8D+AKWlpQBXqv8AWMj+AHx8fACJiYkAsbGxACK3/gAhgeIAAH7/AH2t3gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYGBgYGBgYGBgYAAAAAAAAGBgYGBgYGBgYGAAAAAAAABgoFBQUBDQ0NBgAAAAAAAAYRDQ0BChEREQYAAAAAAAATCgwMFAIGBhETAAAAAAAAEwoMDBQCBgYREwAAAAAAAAQNBQUHAQ0NEQQAAAAAAAAECAgIEgQICAgEAAAAAAAAAA8ODgAADg4PAAAAAAAAAAAPDg4AAA4ODwAAAAAAAAAACwkJAAAJCQkAAAAAAAAAAAMLCwkJCwsLAAAAAAAAAAAAAwMQEBAQAAAAAAAAAAAAAAMDEBAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//AADgBwAA4AcAAOAHAADgBwAA4AcAAOAHAADgBwAA4AcAAPGPAADxjwAA8Y8AAPAPAAD4HwAA+B8AAP//AAA=" rel="icon" type="image/x-icon" />
-	
+	<script src="main.js"></script>
 </head>
 <body>
 <div class="container">
@@ -22,33 +22,41 @@
 			<i class="far fa-clipboard"></i>
 		</button>
 	</div>
-	<div class="settings">
-		<div class="setting">
-			<label>Password length (max. 20 | min. 4)</label>
-			<input type="number" id="length" min='4' max='20' value='20' />
-		</div>
-		<div class="setting">
-			<label>Include uppercase letters</label> 
-			<input type="checkbox" id="uppercase" checked />
-		</div>
-		<div class="setting">
-			<label>Include lowercase letters</label> 
-			<input type="checkbox" id="lowercase" checked />
-		</div>
-		<div class="setting">
-			<label>Include numbers</label> 
-			<input type="checkbox" id="numbers" checked />
-		</div>
-		<div class="setting">
-			<label>Include symbols</label> 
-			<input type="checkbox" id="symbols" checked />
-		</div>
-	</div>
-	<button class="button-54" id="generate">
+	   <body>
+        <div class="pw-container">
+            <div class="pw-header">
+                <div class="pw">
+                    <span id="pw">l823Zs78#Css09@</span>
+                    <button id="copy">Copy</button>
+                </div>
+            </div>
+            <div class="pw-body">
+                <div class="form-control">
+                    <label for="len">Password Length</label>
+                    <input id="len" value="15" type="number" min="2" max="30" />
+                </div>
+                <div class="form-control">
+                    <label for="upper">Contain Uppercase Letters</label>
+                    <input id="upper" type="checkbox" />
+                </div>
+                <div class="form-control">
+                    <label for="lower">Contain Lowercase Letters</label>
+                    <input id="lower" type="checkbox" />
+                </div>
+                <div class="form-control">
+                    <label for="number">Contain Numbers</label>
+                    <input id="number" type="checkbox" />
+                </div>
+                <div class="form-control">
+                    <label for="symbol">Contain Symbols</label>
+                    <input id="symbol" type="checkbox" />
+                </div>
+                <button class="button-54" id="generate">
 		Generate secure password
-	</button>
+		</button>
+            </div>
+        </div>
+    </body>
 </div>
-
-<script src="main.js"></script>
 </body>
 </html>
